@@ -28,3 +28,33 @@ This Jupyter Notebook is designed for generating and evaluating question-answer 
 ### File outputs
 **Outputs for Two_step_approach.ipynb**: 2s_gpt.csv, 2s_llama2_70b.csv, and 2s_llama2_7b.csv
 **Outputs for abstractive_summarization.ipynb**: 'as_gpt.csv', 'as_llama2_70b.csv', and 'as_llama2_7b.csv'
+
+
+
+## get_gpt_finetuned
+### Overview
+This Jupyter Notebook is contains a function to run queries on the fine tuned model. 
+
+### Usage
+1. Set up the OpenAI key in the environment variables or directly in the script in the first code section.
+2. Call the get_gpt function with the prompt as input and the gpt_api_key variable
+
+### Output
+- The fine-tuned LLMs output from the input prompt
+
+
+## scraper_beoworld.ipynb
+### Overview
+Webcrawler for the Beoworld using to subtract and clean relevant information from the forum posts using requests and beautifulsoup
+
+### Usage
+1. Modify the forum_links dictionary in the notebook to include the base URLs of the Beoworld forum sections you wish to scrape
+2. Run the script to run the crawler and extract post data.
+**OBS** It is important to note that Beoworld has undergone subsequent structural changes, thereby requieres that the code is adapted to adjust for the changes in the HTML-code.
+
+### Output
+The retrieve_all_posts function will return a dictionary for each URL processed. This dictionary contains:
+  - header_name: The title of the forum post.
+  - url: The URL of the forum post.
+  - tags: A list of tags associated with the post.
+  - posts: A list of dictionaries, each representing a post within the forum thread, including details such as the post number, author, role, and tex
