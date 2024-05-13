@@ -2,19 +2,31 @@
 master/
 
 ├── README.md
-├── Dataset generation/
-│ ├── Two_step_approach.ipynb
-│ ├── abstractive_summarization.ipynb
-│ ├── get_gpt_finetuned.ipynb
-│ ├── scraper_beoworld.ipynb
-├── RAG/
-  ├── storage│ 
-    ├── _files related to vector database_
 
+├── Dataset generation/
+
+│ ├── Two_step_approach.ipynb
+
+│ ├── abstractive_summarization.ipynb
+
+│ ├── get_gpt_finetuned.ipynb
+
+│ ├── scraper_beoworld.ipynb
+
+├── RAG/
+
+  ├── storage│ 
+  
+    ├── _files related to vector database_
+    
 │ ├── rag.ipynb
+
 │ ├── rag_chatbot.py
+
 │ ├── requirements.txt
+
 │ ├── .DS_Store (to be ignore)
+
 ├── .DS_Store (to be ignore)
 
 ** Link to datasets**
