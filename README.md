@@ -1,7 +1,7 @@
 **Structure of repo**
 master/
 
-├── README.md
+--├── README.md
 
 ├── Dataset generation/
 
@@ -27,7 +27,7 @@ master/
 
 │ ├── .DS_Store (to be ignore)
 
-├── .DS_Store (to be ignore)
+├── .DS_Store (to be ignore)--
 
 ** Link to datasets**
 - https://drive.google.com/drive/folders/1XHYbwpc1A2Pu3cIyeM4aytApMhMze703?usp=drive_link
