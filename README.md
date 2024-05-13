@@ -1,5 +1,6 @@
 Datasets 
-<img width="1098" alt="Screenshot 2024-05-13 at 01 04 08" src="https://github.com/Olafcito/bo_project_code/assets/122600472/079473c7-b614-44bd-a834-941919f4758c">
+![Uploading Screenshot 2024-05-13 at 17.27.52.png…]()
+
 
 
 # **Structure of repo**
