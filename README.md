@@ -1,33 +1,12 @@
-**Structure of repo**
-master/
+## **Structure of repo**
+This repo is divided by the two overarching processes in relation to the development of the QA-systems.
+The process are as follows:
 
---├── README.md
-
-├── Dataset generation/
-
-│ ├── Two_step_approach.ipynb
-
-│ ├── abstractive_summarization.ipynb
-
-│ ├── get_gpt_finetuned.ipynb
-
-│ ├── scraper_beoworld.ipynb
-
-├── RAG/
-
-  ├── storage│ 
-  
-    ├── _files related to vector database_
-    
-│ ├── rag.ipynb
-
-│ ├── rag_chatbot.py
-
-│ ├── requirements.txt
-
-│ ├── .DS_Store (to be ignore)
-
-├── .DS_Store (to be ignore)--
+### **Dataset generation**
+The process of developing and evaluating the QA-pairs based on the webscraped data from Beoworld. The files is split between abstractive summarization and two-step approach
+### **Retreival Augmented Generation**
+This folder encompasses the development and usage of the RAG systems. It develops the vector database, saved as the storage folder. 
+It allows for inference based on the RAG system with either the fine-tuned or baseline model. Additionally, it includes a chatbot based on one of the RAG models that can be run from the terminal.
 
 ** Link to datasets**
 - https://drive.google.com/drive/folders/1XHYbwpc1A2Pu3cIyeM4aytApMhMze703?usp=drive_link
