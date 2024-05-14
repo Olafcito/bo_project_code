@@ -7,13 +7,13 @@ The process are as follows:
 The dataset includes the 3 folders
 
 ### Dataset evaluation
-- contained Excel files for question and answer evaluations for both Human Eval and LLM eval
+- contains Excel files for question and answer evaluations for both Human Eval and LLM eval
+
 The datasets follow the same folder structure with RAG and Dataset generation. Add the respective dataset folders to Dataset generation and RAG respectively
 ### **Dataset generation**
-The process of developing and evaluating the QA-pairs based on the webscraped data from Beoworld. The files is split between abstractive summarization and two-step approach
+- The process of developing and evaluating the QA-pairs based on the webscraped data from Beoworld. The files is split between abstractive summarization and two-step approach
 ### **RAG**
-This folder encompasses the development and usage of the RAG systems. It develops the vector database, saved as the storage folder. 
-It allows for inference based on the RAG system with either the fine-tuned or baseline model. Additionally, it includes a chatbot based on one of the RAG models that can be run from the terminal.
+- This folder encompasses the development and usage of the RAG systems. It develops the vector database, saved as the storage folder.  It allows for inference based on the RAG system with either the fine-tuned or baseline model. Additionally, it includes a chatbot based on one of the RAG models that can be run from the terminal.
 
 # RAG
 ## rag.ipynb
