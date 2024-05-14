@@ -1,8 +1,3 @@
-Datasets 
-![image](https://github.com/Olafcito/bo_project_code/assets/122600472/5207d35f-30d7-44dd-abb7-a8a8d460ec75)
-
-
-
 # **Structure of repo**
 This repo is divided by the two overarching processes in relation to the development of the QA-systems.
 The process are as follows:
@@ -18,6 +13,40 @@ The process of developing and evaluating the QA-pairs based on the webscraped da
 ### **Retreival Augmented Generation**
 This folder encompasses the development and usage of the RAG systems. It develops the vector database, saved as the storage folder. 
 It allows for inference based on the RAG system with either the fine-tuned or baseline model. Additionally, it includes a chatbot based on one of the RAG models that can be run from the terminal.
+
+
+# RAG
+## rag.ipynb
+### Overview
+This notebook details the setup of a Retrieval-Augmented Generation (RAG) system. It includes components for building and managing vector stores and creating query engines with baseline and fine-tuned models to handle answer input prompts. 
+
+### Quick Start
+Skip the vector store building by loading the existing vector stores and directly test queries using the outlined steps in the 'Testing' and 'Evaluation' sections.
+
+### Usage
+1. Set up the OpenAI key in the environment variables or directly in the script in the first code section.
+2. Skip  'building vector store with documents'-part in order to load the existing vector stores and directly test queries using the  steps in the 'Testing' and 'Evaluation' sections.
+3. Use the rag_query function with query engine and query as input. query_engine_ft is the fine-tuned RAG model, whilst query_engine_gpt35 
+4. Usage is not recommended, but evaluations can be run using the included Excel dataset and generate detailed reports. 
+
+
+## rag_chatbot.py
+
+### Overview
+This script sets up a chat engine using a RAG, integrating vector store management and handle query processing. The chatbot encorporates memory in order to remember the conversation.
+
+### Features
+- **Vector Store Loading**: Automatically loads a pre-configured vector store from disk.
+- **Query Engine Configuration**: Includes setup for both a baseline and a fine-tuned GPT-3.5 model for handling queries.
+- **Interactive Chat Session**: Users can input queries and receive responses interactively, leveraging the system's advanced NLP capabilities.
+
+### Usage
+1. Make sure the vector store data is present in the `./storage` directory.
+2. Set up the OpenAI API key in the environment variables or directly in the script.
+3. Define the chat_engine to either chat_engine_ft or chat_engine_baseline
+- Enter 'c' to exit the chat session.
+
+## /storage
 
 
 # Dataset generation files descriptions
@@ -64,38 +93,8 @@ The retrieve_all_posts function will return a dictionary for each URL processed.
   - tags: A list of tags associated with the post.
   - posts: A list of dictionaries, each representing a post within the forum thread, including details such as the post number, author, role, and text
 
-# RAG
-## rag.ipynb
-### Overview
-This notebook details the setup of a Retrieval-Augmented Generation (RAG) system. It includes components for building and managing vector stores and creating query engines with baseline and fine-tuned models to handle answer input prompts. 
-
-### Quick Start
-Skip the vector store building by loading the existing vector stores and directly test queries using the outlined steps in the 'Testing' and 'Evaluation' sections.
-
-### Usage
-1. Set up the OpenAI key in the environment variables or directly in the script in the first code section.
-2. Skip  'building vector store with documents'-part in order to load the existing vector stores and directly test queries using the  steps in the 'Testing' and 'Evaluation' sections.
-3. Use the rag_query function with query engine and query as input. query_engine_ft is the fine-tuned RAG model, whilst query_engine_gpt35 
-4. Usage is not recommended, but evaluations can be run using the included Excel dataset and generate detailed reports. 
-
-
-## rag_chatbot.py
-
-### Overview
-This script sets up a chat engine using a RAG, integrating vector store management and handle query processing. The chatbot encorporates memory in order to remember the conversation.
-
-### Features
-- **Vector Store Loading**: Automatically loads a pre-configured vector store from disk.
-- **Query Engine Configuration**: Includes setup for both a baseline and a fine-tuned GPT-3.5 model for handling queries.
-- **Interactive Chat Session**: Users can input queries and receive responses interactively, leveraging the system's advanced NLP capabilities.
-
-### Usage
-1. Make sure the vector store data is present in the `./storage` directory.
-2. Set up the OpenAI API key in the environment variables or directly in the script.
-3. Define the chat_engine to either chat_engine_ft or chat_engine_baseline
-- Enter 'c' to exit the chat session.
-
-## /storage
+# Datasets 
+![image](https://github.com/Olafcito/bo_project_code/assets/122600472/5207d35f-30d7-44dd-abb7-a8a8d460ec75)
 
 ### Overview
 The FAISS vector database as developed in rag.ipynb
